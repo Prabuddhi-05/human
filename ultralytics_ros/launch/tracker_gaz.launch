@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+  <!-- Four image topics -->
+  <arg name="front_camera_image_topic" default="/front_camera/color/image_raw"/>
+  <arg name="right_camera_image_topic" default="/right_camera/color/image_raw"/>
+  <arg name="back_camera_image_topic" default="/back_camera/color/image_raw"/>
+  <arg name="left_camera_image_topic" default="/left_camera/color/image_raw"/>
+  
+  <arg name="yolo_model" default="yolov8n-pose.pt"/>
+  <arg name="detection_topic" default="detection_result"/>
+  <arg name="conf_thres" default="0.08"/>
+  <arg name="iou_thres" default="0.45"/>
+  <arg name="max_det" default="300"/>
+  <arg name="tracker" default="bytetrack.yaml"/>
+  <arg name="debug" default="true"/>
+  <arg name="debug_conf" default="true"/>
+  <arg name="debug_line_width" default="1"/>
+  <arg name="debug_font_size" default="1"/>
+  <arg name="debug_font" default="Arial.ttf"/>
+  <arg name="debug_labels" default="true"/>
+  <arg name="debug_boxes" default="true"/>
+ 
+  <!-- Object detection node -->
+  <node name="tracker_node" pkg="ultralytics_ros" type="tracker_node_gaz.py" output="screen">
+    <!-- Pass all the image topics as arguments -->
+    <param name="image_topics" value="$(arg front_camera_image_topic),$(arg right_camera_image_topic),$(arg back_camera_image_topic),$(arg left_camera_image_topic)"/>
+    <param name="yolo_model" value="$(arg yolo_model)"/>
+    <param name="detection_topic" value="$(arg detection_topic)"/>
+    <param name="conf_thres" value="$(arg conf_thres)"/>
+    <param name="iou_thres" value="$(arg iou_thres)"/>
+    <param name="max_det" value="$(arg max_det)"/>
+    <param name="tracker" value="$(arg tracker)"/>
+    <param name="debug" value="$(arg debug)"/>
+    <param name="debug_conf" value="$(arg debug_conf)"/>
+    <param name="debug_line_width" value="$(arg debug_line_width)"/>
+    <param name="debug_font_size" value="$(arg debug_font_size)"/>
+    <param name="debug_font" value="$(arg debug_font)"/>
+    <param name="debug_labels" value="$(arg debug_labels)"/>
+    <param name="debug_boxes" value="$(arg debug_boxes)"/>
+  </node>
+  
+  <!-- Image view -->
+  <node if="$(arg debug)" name="image_view" pkg="image_view" type="image_view" output="screen">
+  <param name="autosize" value="false"/> <!-- Disable autosizing to use custom width and height -->
+  <!--<param name="width" value="$(arg debug_image_width)"/>
+  <param name="height" value="$(arg debug_image_height)"/>-->
+    <!-- Modify the remap to use the debug_image topic -->
+    <remap from="image" to="debug_image"/>
+  </node>
+</launch>
+
