@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<launch>
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find husky_viz)/rviz/robot_husky_left.rviz" output="screen"/>
+</launch>
