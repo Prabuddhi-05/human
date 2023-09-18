@@ -26,6 +26,8 @@ $ rosdep install -r -y -i --from-paths .
 *  `robot_husky.rviz` and `robot_husky_left.rviz` files to the location `~/opt/ros/noetic/share/husky_viz/rviz`
 *  `view_people.launch` and `view_people_left.launch` files to the location `~/opt/ros/noetic/share/husky_viz/launch`
 
+HOW TO USE IT:
+
 References : [ultralytics_ros](https://github.com/Alpaca-zip/ultralytics_ros.git)
 
 
@@ -33,7 +35,7 @@ References : [ultralytics_ros](https://github.com/Alpaca-zip/ultralytics_ros.git
 
 
 
-HOW TO USE IT:
+
 
 # How to use the code:
 PREREQUISITES:
