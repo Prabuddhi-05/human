@@ -31,8 +31,10 @@ HOW TO USE IT:
 | Launch file name | Use | 
 |-----------------|-----------------|
 | tracker_real.launch|  For human detection on raw color images from different image sources, from a RealSense camera or a web camera, by modifying the "image_topic" parameter accordingly. | 
-| Row 2, Column 1 | Row 2, Column 2 | 
-| Row 3, Column 1 | Row 3, Column 2 | 
+| tracker_bag.launch | For human detection on color images obtained by playing back the content of a ROS bag file| 
+| husky.launch|To launch Gazebo in a simulation environment represented by a cafe world model, and to spawn a Husky robot model into this cafe world| 
+
+
 
 
 References : [ultralytics_ros](https://github.com/Alpaca-zip/ultralytics_ros.git)
