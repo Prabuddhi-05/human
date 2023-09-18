@@ -30,7 +30,7 @@ HOW TO USE IT:
 
 | Launch file name | Use | 
 |-----------------|-----------------|
-| tracker_real.launch|  For object detection and tracking on raw color images from different image sources, from a RealSense camera or a web camera, by modifying the "image_topic" parameter accordingly. | 
+| tracker_real.launch|  For human detection on raw color images from different image sources, from a RealSense camera or a web camera, by modifying the "image_topic" parameter accordingly. | 
 | Row 2, Column 1 | Row 2, Column 2 | 
 | Row 3, Column 1 | Row 3, Column 2 | 
 
