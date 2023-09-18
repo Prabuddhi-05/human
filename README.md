@@ -9,34 +9,27 @@ This repository contains a ROS package for real-time human detection, tracking i
 PREREQUISITES:
 1. Install ROS Noetic through the link in [here](http://wiki.ros.org/noetic/Installation/Ubuntu) in Ubuntu 20.04.
 2. Create a catkin workspace called `catkin_ws` and create an `src` directory by issuing the command `mkdir -p ~/catkin_ws/src`
-3. In the source (src) directory, clone the [human](https://github.com/Prabuddhi-05/human.git) repository. 
-4. Follow the following commands.
+3. In the source (`src` ) directory, clone the [human](https://github.com/Prabuddhi-05/human.git) repository. 
+4. Execute the following commands in the terminal.
 
 ```bash
 $ python3 -m pip install -r ultralytics_ros/requirements.txt
 $ cd ~/catkin_ws
 $ rosdep install -r -y -i --from-paths .
-$ catkin_make
 ```
+5. In `src`, clone the [realsense_ros_gazebo](https://github.com/nilseuropa/realsense_ros_gazebo.git) repository. This package extends RealSense camera support to the Gazebo simulation environment.
+6. In `src`, clone the [realsense-ros](https://github.com/IntelRealSense/realsense-ros.git) repository. It consists the package to integrate RealSense cameras into ROS.
+7. Move to the `catkin_ws` and issue the command `catkin_make`.
+8. In the home directory, clone the [husky](https://github.com/husky/husky.git) repository. This provides ROS support to the Husky robot model.
+9. Copy/replace the following files in the `~/ultralytics_ros/resources` to the relevant new locations.
+`husky.urdf.xacro` file to location `~/opt/ros/noetic/share/husky_description/urdf`
+`robot_husky.rviz` and `robot_husky_left.rviz` to `~/opt/ros/noetic/share/husky_viz/rviz`
+`view_people.launch` and `view_people_left.launch` to `~/opt/ros/noetic/share/husky_viz/launch`
+   
 
 
-6. ROS package for real-time object detection using the Ultralytics YOLO, enabling flexible integration with various robotics applications.
-7. 
-8.
 
-
-
-
-
-1. Create a catkin workspace called `catkin_ws` and create an `src` directory by issuing the command `mkdir -p ~/catkin_ws/src`
-2. In the source directory `catkin_ws/src`, update the system through `sudo apt-get update && sudo apt-get upgrade`
-3. In `catkin_ws/src`, install all the dependencies `rosdep install --from-paths . -i -y`
-4. Installl scikit-learn thorugh `sudo apt-get install python3-sklearn python3-sklearn-lib`
-5. Fork the workshop repository to `catkin_ws/src` through the command `git clone https://github.com/LCAS/CMP9767M.git`
-6. Copy the contents of the zip file `Assignment` (after extracted) to `catkin_ws/src`
-7. OR instead of Step 6, fork the contents of the `Assignment` repository in GitHub to `catkin_ws/src` through `git clone https://github.com/Prabuddhi-05/Assignment.git`
-9. Move to the `catkin_ws` and issue the command `catkin_make` 
-10. Source the workspace through the command `source devel/setup.bash`
+HOW TO USE IT:
 
 # How to use the code:
 PREREQUISITES:
