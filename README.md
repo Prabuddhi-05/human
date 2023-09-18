@@ -35,11 +35,11 @@ The table below gives the list of launch files in the repository.
 |1| tracker_real.launch|  For human detection on raw color images from different image sources, from a RealSense camera or a web camera, by modifying the "image_topic" parameter accordingly| |
 |2| tracker_bag.launch | For human detection on color images obtained by playing back the content of a ROS bag file| |
 |3| husky.launch|To launch Gazebo in a simulation environment represented by a cafe world model, and to spawn a Husky robot model into this cafe world| |
-|4| tracker_gaz_one.launch|For human detection on color images obtained from the left camera mounted on the Husky robot| Run with 3|
+|4| tracker_gaz_one.launch|For human detection on color images obtained from a single camera mounted on the Husky robot| Run with 3|
 |5| tracker_gaz.launch|For human detection on color images obtained from all four cameras mounted on the Husky robot with the "multiple-camera single-detector" method| Run with 3| 
 |6| tracker_gaz_multiple.launch|For human detection on color images obtained from all four cameras mounted on the Husky robot with the "multiple-camera multiple-detector" method| Run with 3| 
-|7|tracker_left.launch|For 2D to 3D pose estimation, visualization of 3D pose as human stick figures, reconstruction of stick figures with missing joints and construction of stick figures with sensible joint lengths|| 
-|8| tracker_all.launch|hhhhh|Run with 3 and 8|
+|7|tracker_left.launch|For 2D to 3D pose estimation, visualization of 3D pose as human stick figures, reconstruction of stick figures with missing joints and construction of stick figures with sensible joint lengths for the images captured from a single camera mounted on the Husky robot|| 
+|8| tracker_all.launch|For 2D to 3D pose estimation, visualization of 3D pose as human stick figures, reconstruction of stick figures with missing joints and construction of stick figures with sensible joint lengths for the images captured from a multiple cameras mounted on the Husky robot|Run with 3 and 8|
 |9| view_people_left.launch|To launch RViz for visualizing the Husky robot's data from the left camera mounted on the Husky robot||  
 |10|view_people.launch|To launch RViz for visualizing the Husky robot's data from all four cameras mounted on the Husky robot|| 
 
