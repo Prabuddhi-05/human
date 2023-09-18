@@ -33,15 +33,15 @@ The table below gives the list of launch files in the repository.
 | No. | Launch file name | Purpose of the launch file | How to use | 
 |-----------------|-----------------|-----------------|-----------------|
 |1| tracker_real.launch|  For human detection on raw color images from different image sources, from a RealSense camera or a web camera, by modifying the "image_topic" parameter accordingly.| |
-|2|| tracker_bag.launch | For human detection on color images obtained by playing back the content of a ROS bag file| |
-|3|| husky.launch|To launch Gazebo in a simulation environment represented by a cafe world model, and to spawn a Husky robot model into this cafe world| |
-|4|| tracker_gaz_one.launch|For human detection on color images obtained from the left camera mounted on the Husky robot| Run with 3|
-|5|| tracker_gaz.launch|For human detection on color images obtained from all four cameras mounted on the Husky robot with the "multiple-camera single-detector method"|  Run with 3| 
-|6|| tracker_gaz_multiple.launch|For human detection on color images obtained from all four cameras mounted on the Husky robot with the "multiple-camera multiple-detector method"|  Run with 3| 
-|7|| tracker_left.launch|hhhhh| Run with 3 and 7| 
-|8|| tracker_all.launch|hhhhh| Run with 3 and 8|
-|9|| view_people_left.launch|hhhhh||  
-|10||view_people.launch|hhhhh|| 
+|2| tracker_bag.launch | For human detection on color images obtained by playing back the content of a ROS bag file| |
+|3| husky.launch|To launch Gazebo in a simulation environment represented by a cafe world model, and to spawn a Husky robot model into this cafe world| |
+|4| tracker_gaz_one.launch|For human detection on color images obtained from the left camera mounted on the Husky robot| Run with 3|
+|5| tracker_gaz.launch|For human detection on color images obtained from all four cameras mounted on the Husky robot with the "multiple-camera single-detector method"|  Run with 3| 
+|6| tracker_gaz_multiple.launch|For human detection on color images obtained from all four cameras mounted on the Husky robot with the "multiple-camera multiple-detector method"|  Run with 3| 
+|7|tracker_left.launch|hhhhh| Run with 3 and 7| 
+|8| tracker_all.launch|hhhhh| Run with 3 and 8|
+|9| view_people_left.launch|hhhhh||  
+|10|view_people.launch|hhhhh|| 
 
 
 
