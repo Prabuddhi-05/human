@@ -7,7 +7,9 @@ This repository contains a ROS package for real-time human detection, tracking i
 ## How to arrange the setup before running the system
 
 PREREQUISITES:
-1. Install ROS Noetic through the link in [here](http://wiki.ros.org/noetic/Installation/Ubuntu).
+1. Install ROS Noetic through the link in [here](http://wiki.ros.org/noetic/Installation/Ubuntu) in Ubuntu 20.04.
+2. Create a catkin workspace called `catkin_ws` and create an `src` directory by issuing the command `mkdir -p ~/catkin_ws/src`
+3. In the source directory, clone the [ultralytics_ros]([https://github.com/Alpaca-zip/ultralytics_ros.git]) repository.
 
 
 1. Create a catkin workspace called `catkin_ws` and create an `src` directory by issuing the command `mkdir -p ~/catkin_ws/src`
