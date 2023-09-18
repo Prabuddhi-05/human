@@ -2,7 +2,7 @@
 
 # human
 
-This repository contains a ROS package for real-time human detection, tracking humans within bounding boxes, and estimating thier body postures using Ultralytics YOLOv8 and integrating features for multi-camera support and 2D to 3D pose estimation and visualization of 3D pose using human stick figures.  
+This repository contains a ROS package for real-time human detection, tracking humans within bounding boxes, and estimating their body postures using Ultralytics YOLOv8 and integrating features for multi-camera support and 2D to 3D pose estimation and visualization of 3D pose using human stick figures.  
 
 ## How to arrange the setup before running the system
 
