@@ -17,6 +17,7 @@ $ python3 -m pip install -r ultralytics_ros/requirements.txt
 $ cd ~/catkin_ws
 $ rosdep install -r -y -i --from-paths .
 $ catkin_make
+```
 
 
 6. ROS package for real-time object detection using the Ultralytics YOLO, enabling flexible integration with various robotics applications.
