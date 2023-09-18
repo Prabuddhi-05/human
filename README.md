@@ -19,7 +19,7 @@ $ rosdep install -r -y -i --from-paths .
 ```
 5. In `src`, clone the [realsense_ros_gazebo](https://github.com/nilseuropa/realsense_ros_gazebo.git) repository. This package extends RealSense camera support to the Gazebo simulation environment.
 6. In `src`, clone the [realsense-ros](https://github.com/IntelRealSense/realsense-ros.git) repository. It consists of the package to integrate RealSense cameras into ROS.
-7. Move to the `catkin_ws` and issue the command `catkin_make`.
+7. Move to the `catkin_ws` and build and source the workspace by issuing the commands `catkin_make` and `source devel/setup.bash`.
 8. In the home directory, clone the [husky](https://github.com/husky/husky.git) repository. This provides ROS support to the Husky robot model.
 9. Copy/replace the following files located in the `~/ultralytics_ros/resources` to the relevant new locations.
 *  `husky.urdf.xacro` file to location `~/opt/ros/noetic/share/husky_description/urdf`
