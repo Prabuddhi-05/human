@@ -40,8 +40,8 @@ The table below gives the list of launch files in the repository.
 |6| tracker_gaz_multiple.launch|For human detection on color images obtained from all four cameras mounted on the Husky robot with the "multiple-camera multiple-detector" method| Run with 3| 
 |7|tracker_left.launch|hhhhh|Run with 3 and 7| 
 |8| tracker_all.launch|hhhhh|Run with 3 and 8|
-|9| view_people_left.launch|hhhhh||  
-|10|view_people.launch|hhhhh|| 
+|9| view_people_left.launch|To launch RViz for visualizing the Husky robot's data from the left camera mounted on the Husky robot||  
+|10|view_people.launch|To launch RViz for visualizing the Husky robot's data from all four cameras mounted on the Husky robot|| 
 
 
 
