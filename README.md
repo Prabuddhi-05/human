@@ -22,9 +22,9 @@ $ rosdep install -r -y -i --from-paths .
 7. Move to the `catkin_ws` and issue the command `catkin_make`.
 8. In the home directory, clone the [husky](https://github.com/husky/husky.git) repository. This provides ROS support to the Husky robot model.
 9. Copy/replace the following files in the `~/ultralytics_ros/resources` to the relevant new locations.
-* `husky.urdf.xacro` file to location `~/opt/ros/noetic/share/husky_description/urdf`
-* `robot_husky.rviz` and `robot_husky_left.rviz` to `~/opt/ros/noetic/share/husky_viz/rviz`
-* `view_people.launch` and `view_people_left.launch` to `~/opt/ros/noetic/share/husky_viz/launch`
+*  `husky.urdf.xacro` file to location `~/opt/ros/noetic/share/husky_description/urdf`
+*  `robot_husky.rviz` and `robot_husky_left.rviz` to `~/opt/ros/noetic/share/husky_viz/rviz`
+*  `view_people.launch` and `view_people_left.launch` to `~/opt/ros/noetic/share/husky_viz/launch`
    
 
 
