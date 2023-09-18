@@ -28,11 +28,19 @@ $ rosdep install -r -y -i --from-paths .
 
 HOW TO USE IT:
 
-| Launch file name | Use | 
-|-----------------|-----------------|
-| tracker_real.launch|  For human detection on raw color images from different image sources, from a RealSense camera or a web camera, by modifying the "image_topic" parameter accordingly. | 
-| tracker_bag.launch | For human detection on color images obtained by playing back the content of a ROS bag file| 
-| husky.launch|To launch Gazebo in a simulation environment represented by a cafe world model, and to spawn a Husky robot model into this cafe world| 
+| Use | Launch file name | Use | 
+|-----------------|-----------------|-----------------|
+|1| tracker_real.launch|  For human detection on raw color images from different image sources, from a RealSense camera or a web camera, by modifying the "image_topic" parameter accordingly. | 
+|2|| tracker_bag.launch | For human detection on color images obtained by playing back the content of a ROS bag file| 
+|3|| husky.launch|To launch Gazebo in a simulation environment represented by a cafe world model, and to spawn a Husky robot model into this cafe world| 
+|4|| tracker_gaz_one.launch|For human detection on color images obtained from the left camera mounted on the Husky robot| 
+|5|| tracker_gaz.launch|For human detection on color images obtained from all four cameras mounted on the Husky robot with the "multiple-camera single-detector method"| 
+|6|| tracker_gaz_multiple.launch|For human detection on color images obtained from all four cameras mounted on the Husky robot with the "multiple-camera multiple-detector method"| 
+|7|| tracker_left.launch|| 
+|8|| tracker_all.launch||
+|9|| view_people_left.launch|| 
+|10||view_people.launch||
+
 
 
 
