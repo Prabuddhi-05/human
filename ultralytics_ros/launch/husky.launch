@@ -1,0 +1,20 @@
+<launch>
+
+  <!-- Launch Gazebo with an empty world -->
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(find ultralytics_ros)/worlds/cafe.world"/>
+  </include>
+  
+  <!-- Define the x, y, and z values -->
+  <arg name="x" default="0.0"/>
+  <arg name="y" default="-6.0"/>
+  <arg name="z" default="0.5"/>
+  
+  <!-- Include the spawn_husky.launch file and pass the defined arguments -->
+  <include file="$(find husky_gazebo)/launch/spawn_husky.launch">
+    <arg name="x" value="$(arg x)"/>
+    <arg name="y" value="$(arg y)"/>
+    <arg name="z" value="$(arg z)"/>
+  </include>
+ 
+</launch>
