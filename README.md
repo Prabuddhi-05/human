@@ -4,7 +4,7 @@
 
 This repository contains a ROS package for real-time human detection, tracking humans within bounding boxes, and estimating their body postures using Ultralytics YOLOv8 and integrating features for multi-camera support, 2D to 3D pose estimation and visualization of 3D pose using human stick figures.  
 
-## How to arrange the setup before running the system
+## How to arrange the setup 
 
 PREREQUISITES:
 1. Install ROS Noetic through the link in [here](http://wiki.ros.org/noetic/Installation/Ubuntu) in Ubuntu 20.04.
