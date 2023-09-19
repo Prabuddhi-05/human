@@ -28,7 +28,7 @@ $ rosdep install -r -y -i --from-paths .
 
 HOW TO USE IT:
 
-The table below gives the list of launch files in the repository. 
+The table below gives the list of launch files in the repository and how to use them. 
 
 | No. | Launch file name | Purpose of the launch file | How to use | 
 |-----------------|-----------------|-----------------|-----------------|
