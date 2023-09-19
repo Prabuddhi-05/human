@@ -1,0 +1,100 @@
+digraph {
+	graph [nodesep=0.5 rankdir=LR ranksep=1.0]
+	Start [label=Start shape=ellipse]
+	A [label=A shape=ellipse]
+	B [label=B shape=ellipse]
+	C [label=C shape=ellipse]
+	D [label=D shape=ellipse]
+	E [label=E shape=ellipse]
+	F [label=F shape=ellipse]
+	G [label=G shape=ellipse]
+	"No A" [label="No A" shape=ellipse]
+	"No B" [label="No A" shape=ellipse]
+	"No C" [label="No C" shape=ellipse]
+	"No D" [label="No D" shape=ellipse]
+	"No E" [label="No D" shape=ellipse]
+	"No F" [label="No F" shape=ellipse]
+	"No F" [label="No F" shape=ellipse]
+	"Add A based on B" [label="Add A based on B" shape=box]
+	"Find C based on D" [label="Find C based on D" shape=box]
+	"Find C based on F" [label="Find C based on F" shape=box]
+	"Find F based on G" [label="Find F based on G" shape=box]
+	"Find C based on B" [label="Find C based on B" shape=box]
+	"Find D based on C" [label="Find D based on C" shape=box]
+	"Find D based on G" [label="Find D based on G" shape=box]
+	"Find G based on F" [label="Find G based on F" shape=box]
+	"Find D based on B" [label="Find D based on B" shape=box]
+	"Find F based on C" [label="Find F based on C" shape=box]
+	"Find F based on E" [label="Find F based on E" shape=box]
+	"Find G based on D" [label="Find G based on D" shape=box]
+	"Find G based on E" [label="Find G based on E" shape=box]
+	"Add E based on B" [label="Add E based on B" shape=box]
+	"Add B based on E" [label="Add based on E" shape=box]
+	"Add B based on A" [label="Add B based on A" shape=box]
+	Start -> B
+	B -> E
+	E -> "No A"
+	"No A" -> "Add A based on B"
+	"Add A based on B" -> A
+	E -> "No C"
+	"No C" -> D
+	D -> "Find C based on D"
+	"Find C based on D" -> C
+	"No C" -> F
+	F -> "Find C based on F"
+	"Find C based on F" -> C
+	"No C" -> G
+	G -> "Find F based on G"
+	"Find F based on G" -> F
+	"No C" -> B
+	"No B" -> "Find C based on B"
+	"Find C based on B" -> C
+	E -> "No D"
+	"No D" -> C
+	C -> "Find D based on C"
+	"Find D based on C" -> D
+	"No D" -> G
+	G -> "Find D based on G"
+	"Find D based on G" -> D
+	"No D" -> F
+	F -> "Find G based on F"
+	"Find G based on F" -> G
+	"No D" -> B
+	B -> "Find D based on B"
+	"Find D based on B" -> D
+	E -> "No F"
+	"No F" -> G
+	G -> "Find F based on G"
+	"Find F based on G" -> F
+	"No F" -> C
+	C -> "Find F based on C"
+	"Find F based on C" -> F
+	"No F" -> D
+	D -> "Find C based on D"
+	"Find C based on D" -> C
+	"No F" -> E
+	E -> "Find F based on E"
+	"Find F based on E" -> F
+	E -> "No G"
+	"No G" -> F
+	F -> "Find G based on F"
+	"Find G based on F" -> G
+	"No G" -> D
+	D -> "Find G based on D"
+	"Find G based on D" -> G
+	"No G" -> C
+	C -> "Find D based on C"
+	"Find D based on C" -> D
+	"No G" -> E
+	E -> "Find G based on E"
+	"Find G based on E" -> G
+	B -> "No E"
+	"No E" -> "Add E based on B"
+	"Add E based on B" -> E
+	"No B" -> E
+	E -> "Add B based on E"
+	"Add B based on E" -> B
+	"No B" -> A
+	A -> "Add B based on A"
+	"Add B based on A" -> A
+}
